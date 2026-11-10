@@ -1,0 +1,35 @@
+# ==========================
+# Python
+# ==========================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Archivos temporales
+*.log
+*.tmp
+
+# ==========================
+# Datos procesados (opcionales)
+# ==========================
+# Si algún día generas archivos grandes automáticamente,
+# puedes ignorarlos descomentando estas líneas.
+
+# data/processed/*
+# !data/processed/.gitkeep

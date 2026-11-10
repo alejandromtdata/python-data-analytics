@@ -1,57 +1,145 @@
-# Proyecto 1 – Fundamentos de análisis con pandas
+# Python Data Analytics
 
-## Análisis de Ventas con Pandas
+Repositorio de formación y práctica orientado al desarrollo de las competencias necesarias para trabajar como **Junior Data Analyst**.
 
-Este proyecto consiste en un análisis exploratorio de un conjunto de datos de ventas utilizando Python y la librería pandas, siguiendo un flujo de trabajo realista de un analista de datos.
+El proyecto reúne la documentación de estudio, ejercicios guiados y prácticas de análisis de datos utilizando Python y sus principales librerías.
 
-El objetivo principal es limpiar los datos, crear métricas relevantes y responder preguntas de negocio a partir de un archivo CSV con información de ventas.
+## Objetivos
 
-## Contenido del análisis
+- Aprender y consultar los fundamentos de Python aplicados al análisis de datos.
+- Comprender y utilizar librerías como NumPy, Pandas, Matplotlib y Seaborn.
+- Practicar la exploración, limpieza, transformación y análisis de datos.
+- Resolver ejercicios progresivos con situaciones y datos de contexto empresarial.
+- Mantener un entorno de trabajo reproducible y una documentación organizada.
 
-El notebook incluye las siguientes etapas:
+## Estructura del proyecto
 
-- Carga de datos desde archivo CSV.
+```text
+python_data_analytics/
+│
+├── README.md
+│
+├── documentacion/
+│   ├── 01_entorno_de_trabajo.ipynb
+│   └── 02_librerias_de_python.ipynb
+│
+├── practice/
+│   ├── python/
+│   │   ├── 01_fundamentos/
+│   │   │   └── python_fundamentos.ipynb
+│   │   ├── 02_condicionales_y_bucles/
+│   │   ├── 03_estructuras_de_datos/
+│   │   └── 04_funciones/
+│   │
+│   ├── numpy/
+│   │   ├── arrays_y_operaciones/
+│   │   └── estadistica_basica/
+│   │
+│   ├── pandas/
+│   │   ├── 01_fundamentos/
+│   │   ├── 02_consulta_y_seleccion/
+│   │   ├── 03_limpieza_de_datos/
+│   │   ├── 04_transformacion_de_datos/
+│   │   ├── 05_agrupaciones_y_agregaciones/
+│   │   └── 06_analisis_exploratorio/
+│   │
+│   ├── matplotlib/
+│   └── seaborn/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── reports/
+│
+├── src/
+│
+├── tests/
+│
+├── requirements.txt
+└── .gitignore
+```
 
-- Inspección inicial de la estructura y tipos de datos.
+La estructura podrá ampliarse a medida que avancemos en el temario. No es necesario crear desde el principio todos los notebooks o subdirectorios: se añadirán cuando exista contenido que lo justifique.
 
-- Limpieza de datos, aplicando reglas de negocio:
+## Organización del contenido
 
-  - Conversión de fechas a formato datetime
+### `documentacion/`
 
-  - Eliminación de ventas sin cliente
+Contiene los notebooks de referencia que explican los conceptos y herramientas.
 
-  - Eliminación de ventas sin cantidad o con cantidades inválidas
+Cada notebook combina explicaciones, sintaxis, ejemplos y pequeñas tablas de datos cuando ayudan a entender el concepto. Su objetivo es servir como material de consulta y estudio.
 
-  - Creación de métricas, incluyendo el cálculo del importe por venta
+### `practice/`
 
-- Análisis de negocio, respondiendo preguntas como:
+Contiene ejercicios y prácticas para aplicar lo aprendido.
 
-  - Número total de ventas y facturación
+Cada notebook plantea un problema o una serie de ejercicios y desarrolla la resolución mediante código. Los ejercicios se organizan por tecnología y temática para facilitar su consulta y ampliación.
 
-  - Clientes que más y menos han comprado
+### `data/`
 
-  - Productos más y menos vendidos
+Almacena los conjuntos de datos utilizados en los ejercicios y prácticas.
 
-  - Gasto medio por cliente
+- `raw/`: datos originales, sin modificar.
+- `processed/`: datos generados o transformados durante el trabajo.
 
-  - Evolución temporal de las ventas
+Para ejemplos pequeños, los datos pueden definirse directamente dentro del notebook. Se utilizarán archivos externos cuando el volumen, la reutilización o la complejidad de los datos lo hagan conveniente.
 
-  - Mejor y peor día de ventas
+### `src/`
 
-  - Canal de venta con mayores ingresos
+Código Python reutilizable que, cuando tenga sentido, se extraiga de los notebooks para organizarlo en módulos.
 
-## Conclusiones finales con los principales hallazgos
+### `reports/`
 
-### Tecnologías utilizadas
+Resultados, conclusiones o informes derivados de las prácticas de análisis.
 
-Python
+### `tests/`
 
-pandas
+Pruebas para comprobar el funcionamiento del código reutilizable.
 
-Jupyter Notebook
+## Tecnologías
 
-## Objetivo del proyecto
+- Python
+- Jupyter Notebook
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+- VS Code
+- Git y GitHub
 
-Este proyecto forma parte de una serie de prácticas de análisis de datos orientadas 
-a reforzar los fundamentos de pandas y el razonamiento analítico, 
-sirviendo como base para análisis más avanzados en proyectos posteriores.
+## Forma de trabajo
+
+1. Estudiar los conceptos en `documentacion/`.
+2. Aplicarlos mediante ejercicios en `practice/`.
+3. Utilizar tablas pequeñas directamente en los notebooks cuando sea suficiente.
+4. Guardar en `data/raw/` los datasets externos originales.
+5. Guardar en `data/processed/` los datos resultantes de los procesos de limpieza o transformación.
+6. Documentar los resultados y conclusiones cuando la práctica lo requiera.
+
+## Entorno de desarrollo
+
+El proyecto utiliza un entorno virtual propio para instalar y mantener sus dependencias.
+
+Para instalar las dependencias registradas en `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+```
+
+En VS Code, seleccionar el intérprete del entorno virtual y utilizarlo como kernel de los notebooks de Jupyter.
+
+## Progresión de aprendizaje
+
+El contenido se desarrollará progresivamente, desde los fundamentos de Python hasta el análisis de datos:
+
+1. Entorno de trabajo y herramientas.
+2. Fundamentos de Python.
+3. NumPy.
+4. Pandas.
+5. Consulta, limpieza y transformación de datos.
+6. Análisis exploratorio.
+7. Visualización con Matplotlib.
+8. Visualización estadística con Seaborn.
+
+Los apartados se incorporarán conforme se estudien y practiquen. La estructura no implica que todo el temario esté completado.
